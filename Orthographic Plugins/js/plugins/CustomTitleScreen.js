@@ -47,15 +47,4 @@
     this._devNameSprite.bitmap.fontSize = 24;
     this._devNameSprite.bitmap.drawText(text, x, y, maxWidth, 12, 'left');
   };
-
-  Scene_Title.prototype.drawGameTitle = function() {
-      var x = 20;
-      var y = Graphics.height / 4;
-      var maxWidth = Graphics.width - x * 2;
-      var text = $dataSystem.gameTitle;
-      this._gameTitleSprite.bitmap.outlineColor = 'black';
-      this._gameTitleSprite.bitmap.outlineWidth = 8;
-      this._gameTitleSprite.bitmap.fontSize = 72;
-      this._gameTitleSprite.bitmap.drawText(text, x, y, maxWidth, 48, 'center');
-  };
 })();
