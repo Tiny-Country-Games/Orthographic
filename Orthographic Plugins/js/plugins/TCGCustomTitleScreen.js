@@ -41,10 +41,10 @@
 
   Scene_Title.prototype.drawDeveloperName = function() {
     var x = 6;
-    var y = Graphics.height - 26;
+    var y = Graphics.height - 28;
     var maxWidth = Graphics.width - x * 2;
     var text = credPre + " " + devName;
-    this._devNameSprite.bitmap.fontSize = 24;
+    this._devNameSprite.bitmap.fontSize = 30;
     this._devNameSprite.bitmap.drawText(text, x, y, maxWidth, 12, 'left');
   };
 })();
