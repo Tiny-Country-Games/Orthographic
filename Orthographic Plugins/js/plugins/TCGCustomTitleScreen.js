@@ -25,7 +25,7 @@
 (function() {
 
   var _Scene_Title_createForeground = Scene_Title.prototype.createForeground;
-  var parameters = PluginManager.parameters("CustomTitleScreen");
+  var parameters = PluginManager.parameters("TCGCustomTitleScreen");
   var devName = String(parameters["Developer Name"]);
   var credPre = String(parameters["Prefix Credit"]);
   var drawCredit = String(parameters["Credit at Bottom"]) == "true";
