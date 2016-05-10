@@ -19,8 +19,14 @@
 
    Scene_Map.prototype.update = function() {
        _Scene_Map_update.call(this);
+       this._dSprite.bitmap.clear();
        if($dataMap.meta.dTitle) {
            this._dSprite.bitmap.drawText($dataMap.meta.dTitle, 10, 10, Graphics.width, 30, "left");
+       }
+       if($dataMap.meta.keys) {
+         var keyNum = Number($dataMap.meta.keys);
+         var keys = $gameVariables.value(keyNum);
+         this._dSprite.bitmap.drawText("Keys: " + keys, 10, 40, Graphics.width, 30, "left");
        }
    };
 
