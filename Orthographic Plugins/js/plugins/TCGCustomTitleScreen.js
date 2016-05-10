@@ -19,7 +19,7 @@
  * @default Foo Bar
  *
  * @help
- * Allows for the user to able to cusomize the title screen of their game.
+ * Allows for the user to able to customize the title screen of their game.
  *
  */
 (function() {
