@@ -3,5 +3,7 @@
 var $plugins =
 [
 {"name":"TCGSplashScreen_Movie","status":false,"description":"Displays a Splash Screen before the title screen","parameters":{"Splash Movie":"splash","Skip if File Exists":"false"}},
-{"name":"TCGSplashScreen","status":false,"description":"Displays a Splash Screen before the title screen","parameters":{"Splash Text":"Lorem Ipsum Presents","Splash length":"5","Skip if File Exists":"false"}}
+{"name":"TCGSplashScreen","status":false,"description":"Displays a Splash Screen before the title screen","parameters":{"Splash Text":"Lorem Ipsum Presents","Splash length":"5","Skip if File Exists":"false"}},
+{"name":"TCGCustomTitleScreen","status":true,"description":"Allows for custom title screen","parameters":{"Credit at Bottom":"true","Prefix Credit":"Created By","Developer Name":"José Rodriguez-Rivas"}},
+{"name":"TCGDungeons","status":true,"description":"Displays Dungeon information in a dungeon","parameters":{}}
 ];
