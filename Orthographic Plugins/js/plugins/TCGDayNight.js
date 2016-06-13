@@ -72,8 +72,7 @@
  *    Parameters:
  *      Boolean whether or not to reset back to normal
  *      Tint, will use the Day tint in parameters
- *      If false, or not present, the screen will retain
- *      whatever tint is retained
+ *      If false, or not present, the screen will retain current tint
  *
  * Additional Inforamtion
  *  Added several boolean functions to Game_System that can be used
