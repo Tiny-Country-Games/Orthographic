@@ -284,10 +284,6 @@
     this.drawText($gameSystem.getTimeString(), x, 0);
   };
 
-  Window_Time.prototype.value = function() {
-      return $gameParty.gold();
-  };
-
   Window_Time.prototype.open = function() {
       this.refresh();
       Window_Base.prototype.open.call(this);
