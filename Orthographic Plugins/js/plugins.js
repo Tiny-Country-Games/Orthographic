@@ -7,5 +7,5 @@ var $plugins =
 {"name":"TCGControlScreen","status":true,"description":"Creates a screen where all the controls of the game are displayed.","parameters":{}},
 {"name":"TCGDungeons","status":true,"description":"Displays Dungeon information in a dungeon","parameters":{}},
 {"name":"TCGCustomTitleScreen","status":true,"description":"Allows for custom title screen","parameters":{"Credit at Bottom":"true","Prefix Credit":"Created By","Developer Name":"José Rodriguez-Rivas"}},
-{"name":"TCGDayNight","status":true,"description":"Implements a day/night cycle based on system time","parameters":{}}
+{"name":"TCGDayNight","status":true,"description":"Implements a day/night cycle based on system time","parameters":{"Tint Duration":"60","Day Time Tint":"0,0,0,0","Sunset Time Tint":"68,-34,-34,0","Night Time Tint":"-68,-68,0,68","Show Time in Menu":"true"}}
 ];
