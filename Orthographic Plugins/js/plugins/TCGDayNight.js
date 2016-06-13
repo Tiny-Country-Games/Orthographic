@@ -77,7 +77,7 @@
  * Additional Inforamtion
  *  Added several boolean functions to Game_System that can be used
  *  in a script call of a conditional branch
- *    $gameSystem.isDayNight() returns true of the game is tinting based on time
+ *    $gameSystem.isDayNight() returns true if the game is tinting based on time
  *    $gameSystem.isDay() returns true if the hour is >= 6 and < 19
  *    $gameSystem.isSunset() returns true if the hour is equal to 19
  *    $gameSystem.isNight() returns true if the hour >= 20 or < 6
