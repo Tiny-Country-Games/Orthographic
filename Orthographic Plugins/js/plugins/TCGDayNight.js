@@ -216,7 +216,6 @@
 
   Scene_Base.prototype.updateDayNight = function() {
     this._hour = this._date.getHours();
-    console.log(this._hour);
     if(!this._startChecked) {
       if(!$gameScreen.compareTint(_TINTS[this._currentTimeTint])) {
         $gameScreen.startTint(_TINTS[this._currentTimeTint], _duration);
