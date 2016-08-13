@@ -1,11 +1,27 @@
 /*:
  *
- * @plugindesc Displays Dungeon information in a dungeon
+ * @plugindesc Allows For Areas with different names and music in a map
  *
  * @author José Rodriguez-Rivas
  *
  * @help
- * Displays Dungeon information in a dungeon
+ * Allows For Areas with different names and music in a map
+ *
+ * ========================================================
+ *                     How To Use
+ * ========================================================
+ * Areas in the overworld are defined in the notes section
+ * of the map's properties. Each area has a top ordered pair,
+ * a bottom ordered pair, a name, and music.
+ *
+ * Each area is declared in the <Area> notetag. The syntax
+ * for the notetag is as folows:
+ *
+ *    <Area:topX,topY,bottomX,bottomY,areaname,areabgm>
+ *
+ * An overworld can as many areas as needed.
+ *
+ * This plugin overrides, but does not alias, Window_MapName.prototype.refresh.
  *
  */
  (function() {
@@ -47,8 +63,6 @@
   var _Scene_Map_initialize = Scene_Map.prototype.initialize;
   Scene_Map.prototype.initialize = function() {
     _Scene_Map_initialize.call(this);
-    this._p_player_x = -1;
-    this._p_player_y = -1;
     this._areas = [];
   };
 
@@ -64,6 +78,9 @@
   var _Scene_Map_start = Scene_Map.prototype.start;
   Scene_Map.prototype.start = function() {
       _Scene_Map_start.call(this);
+      this._p_player_x = SceneManager.isPreviousScene(Scene_Menu) || SceneManager.isPreviousScene(Scene_Battle) ? $gamePlayer.x : -1;
+      this._p_player_y = SceneManager.isPreviousScene(Scene_Menu) || SceneManager.isPreviousScene(Scene_Battle) ? $gamePlayer.y : -1;
+      console.log(this._p_player_x + ", " + this._p_player_y);
       if($dataMap.note) {
         var arearegex = /(<Area:.*>)/ig;
         var areaMatch = $dataMap.note.match(arearegex);
