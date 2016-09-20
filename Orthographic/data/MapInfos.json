@@ -9,5 +9,9 @@ null,
 {"id":7,"expanded":false,"name":"Scene Seven Grassland","order":7,"parentId":1,"scrollX":0,"scrollY":0},
 {"id":8,"expanded":false,"name":"Scene Eight Stadium Int","order":8,"parentId":1,"scrollX":0,"scrollY":0},
 {"id":9,"expanded":false,"name":"Scene Nine Statium Ext","order":9,"parentId":1,"scrollX":0,"scrollY":0},
-{"id":10,"expanded":false,"name":"Scene Ten Bedroom","order":10,"parentId":1,"scrollX":819,"scrollY":461}
+{"id":10,"expanded":false,"name":"Scene Ten Bedroom","order":10,"parentId":1,"scrollX":819,"scrollY":461},
+{"id":11,"expanded":true,"name":"intro","order":11,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":12,"expanded":false,"name":"1. EXT. Street","order":12,"parentId":11,"scrollX":832,"scrollY":640},
+{"id":13,"expanded":false,"name":"2. INT. Bedroom","order":13,"parentId":11,"scrollX":832,"scrollY":640},
+{"id":14,"expanded":false,"name":"3. INT. Bedroom","order":14,"parentId":11,"scrollX":0,"scrollY":0}
 ]
